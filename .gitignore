@@ -1,10 +1,9 @@
-# Ignore all files in the .terraform directory
-.terraform/
+# Ignore everything
+*
 
-# Ignore Terraform state files
-terraform.tfstate
-terraform.tfstate.backup
-
-# Ignore the specific large file
-.terraform/providers/registry.terraform.io/hashicorp/aws/5.57.0/windows_amd64/terraform-provider-aws_v5.57.0_x5.exe
+# But not these files
+!.gitignore
+!example.tf
+!main.tf
+!output.tf
 
