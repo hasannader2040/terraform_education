@@ -7,3 +7,6 @@
 !main.tf
 !output.tf
 
+# Explicitly ignore the .terraform directory
+.terraform/
+
