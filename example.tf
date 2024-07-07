@@ -27,25 +27,31 @@
 # }
 
 
-# Define a Security Group
-resource "aws_security_group" "allow_tls" {
-  vpc_id      = aws_vpc.main.id
-  name        = "allow_tls"
-  description = "Allow TLS inbound traffic and all outbound traffic"
-  tags = {
-    Name = "allow_tls"
-  }
-}
 
-# Ingress rule for IPv4
-resource "aws_security_group_rule" "allow_tls_ipv4" {
-  type              = "ingress"
-  security_group_id = aws_security_group.allow_tls.id
-  from_port         = 443
-  to_port           = 443
-  protocol          = "tcp"
-  cidr_blocks       = ["${aws_eip.ib.public_ip}/32"]
-}
+
+
+
+
+
+# # Define a Security Group
+# resource "aws_security_group" "allow_tls" {
+#   vpc_id      = aws_vpc.main.id
+#   name        = "allow_tls"
+#   description = "Allow TLS inbound traffic and all outbound traffic"
+#   tags = {
+#     Name = "allow_tls"
+#   }
+# }
+
+# # Ingress rule for IPv4
+# resource "aws_security_group_rule" "allow_tls_ipv4" {
+#   type              = "ingress"
+#   security_group_id = aws_security_group.allow_tls.id
+#   from_port         = 443
+#   to_port           = 443
+#   protocol          = "tcp"
+#   cidr_blocks       = ["${aws_eip.ib.public_ip}/32"]
+# }
 
 
 

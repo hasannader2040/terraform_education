@@ -3,11 +3,11 @@
 terraform {
   required_providers {
     mycloud = {
-      source  = "mycorp/mycloud"
-      version = "5.4.0"
+     source  = "hashicorp/aws"
+      version = ">= 3.0.0"
     }
   }
-  required_version = "~1.4.0"
+required_version = "~> 1.4.0"
 }
 
 
