@@ -6,7 +6,9 @@
 !example.tf
 !main.tf
 !output.tf
+!.gitattributes
 
 # Explicitly ignore the .terraform directory
 .terraform/
-
+terraform.tfstate
+terraform.tfstate.backup
