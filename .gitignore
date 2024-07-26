@@ -1,23 +1,6 @@
-<<<<<<< HEAD
-.terraform/providers/registry.terraform.io/hashicorp/aws/5.57.0/windows_amd64/terraform-provider-aws_v5.57.0_x5.exe
-terraform.tfstate
-terraform.tfstate.backup
-.terraform/
-.terraform/
-.terraform.lock.hcl
-=======
-# Ignore everything
-*
-
-# But not these files
-!.gitignore
-!example.tf
-!main.tf
-!output.tf
-!.gitattributes
-
 # Explicitly ignore the .terraform directory
 .terraform/
->>>>>>> origin/deploy-specific-files
+
+# Ignore state files
 terraform.tfstate
 terraform.tfstate.backup
